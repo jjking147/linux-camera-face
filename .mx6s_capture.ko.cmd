@@ -1,0 +1,1 @@
+cmd_/home/fyj/自学项目/mx6s_capture.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/fyj/自学项目/mx6s_capture.ko /home/fyj/自学项目/mx6s_capture.o /home/fyj/自学项目/mx6s_capture.mod.o
