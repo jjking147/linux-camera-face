@@ -5,3 +5,4 @@ Module.symvers
 modules.order
 mx6s_capture.mod*
 ov5640.mod*
+
