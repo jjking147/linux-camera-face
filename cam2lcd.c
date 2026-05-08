@@ -174,7 +174,7 @@ static void blit_frame(struct video_ctx *v, struct fb_ctx *fb, const uint8_t *sr
         memcpy(fb->base, src, (size_t)fb->line_length * fb->height);
         return;
     }
-    // 按照图像格式缩放，遍历所有的x和y,然后加个边界保护
+    // 如果图像格式不一致，按照图像格式缩放，遍历所有的x和y,然后加个边界保护
     for (y = 0; y < fb->height; ++y)
     {
         uint32_t sy = (uint32_t)(((uint64_t)y * v->height) / fb->height);
